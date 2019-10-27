@@ -1,5 +1,5 @@
 spring:
-  profile:
+  profiles:
     active: dev
     
 server:
@@ -11,7 +11,7 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml
 
 spring:
-  profile: dev
+  profiles: dev
   application:
     name: microservice-product
   datasource:
@@ -25,9 +25,6 @@ spring:
       initial-size: 5
       max-total: 5
       max-wait-millis: 150
-logging:
-  level:
-    com.mengxuegu.mapper: debug
 eureka:
   client:
     registerWithEureka: true 
@@ -47,7 +44,7 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml
 
 spring:
-  profile: prod
+  profiles: prod
   application:
     name: microservice-product 
   datasource:
@@ -61,9 +58,6 @@ spring:
       initial-size: 5
       max-total: 5
       max-wait-millis: 150
-logging:
-  level:
-    com.mengxuegu.mapper: debug
 eureka:
   client:
     registerWithEureka: true 
