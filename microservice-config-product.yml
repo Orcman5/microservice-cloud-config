@@ -7,11 +7,10 @@ mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.mengxuegu.entities
   mapper-locations: classpath:mybatis/mapper/**/*.xml
-
 spring:
   profiles: dev
   application:
-    name: microservice-config-product
+    name: microservice-product-config
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -42,7 +41,7 @@ mybatis:
 spring:
   profiles: prod
   application:
-    name: microservice-config-product 
+    name: microservice-product-config 
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver 
