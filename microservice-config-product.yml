@@ -1,6 +1,8 @@
+spring:
+  profiles:
+    active: dev
 server:
   port: 8080
-
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.mengxuegu.entities
@@ -33,12 +35,10 @@ eureka:
 
 server:
   port: 8081
-
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.mengxuegu.entities
   mapper-locations: classpath:mybatis/mapper/**/*.xml
-
 spring:
   profiles: prod
   application:
