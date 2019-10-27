@@ -11,6 +11,7 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml
 
 spring:
+  profiles: dev
   application:
     name: microservice-product
   datasource:
@@ -46,6 +47,7 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml
 
 spring:
+  profiles: prod
   application:
     name: microservice-product 
   datasource:
